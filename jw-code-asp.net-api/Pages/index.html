@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <input class="navbar-button" type="button" id="signin" onclick="signIn()" value="Sign in">
+        <input class="navbar-button" type="button" id="signup" onclick="signUp()" value="Sign up">
+    </div>
+    <div id="loginform">
+        <form class="form-style-1" action="login">
+            <label>Login</label>
+            <input type="text" id="login" placeholder="login">
+            <Label>Password</Label>
+            <input type="password" id="password" placeholder="password">
+            <label>Submit</label>
+            <input type="button" onclick="funcLogin()" value="Login">
+           <div id="status"></div>
+        </form>
+    </div>
+    <div id="registerform">
+        <form class="form-style-1" action="register">
+            <label>Login</label>
+            <input type="text" id="loginReg" placeholder="login">
+            <label>Email</label>
+            <input type="email" id="emailReg" placeholder="email">
+            <Label>Password</Label>
+            <input type="password" id="passwordReg" placeholder="password">
+            <label>Submit</label>
+            <input type="button" onclick="funcRegister()" value="Login">
+           <div id="status"></div>
+        </form>
+    </div>
+    <div id="response"></div>
+    <script src="script.js"></script>
+</body>
+</html>
